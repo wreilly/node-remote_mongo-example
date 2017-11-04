@@ -1,0 +1,25 @@
+{
+  "name": "remote_mongo-example",
+  "version": "1.0.0",
+  "description": "AWS EC2 Node/Express => MongoDB",
+  "main": "webserver-db-app.js",
+  "scripts": {
+    "startlocal": "nodemon ./wr__webserver-db-app.js --ignore src/ -e js,html,css",
+    "start": "nodemon ./webserver-db-app.js --ignore src/ -e js,html,css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wreilly/node-remote_mongo-example.git"
+  },
+  "author": "wreilly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wreilly/node-remote_mongo-example/issues"
+  },
+  "homepage": "https://github.com/wreilly/node-remote_mongo-example#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.13.0"
+  }
+}
