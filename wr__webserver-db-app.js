@@ -41,6 +41,14 @@ Another idea I find (on some page somewhere): SSH Agent Forwarding
  Time to do git commit from Local, see what git pull looks like over on AWS EC2.
  */
 
+/*
+EDIT # 2 2017-11-05
+Okay, because a 'git pull' over on AWS EC2 runs into the need to MERGE (bummer), I am re-trying a second edit, git commit, and git pull.
+Will I be lucky, and the MERGE biz is now all done and dealt with?
+Or, will I continue to have every git pull get confounded by this blasted unwanted Merge business?
+Let's find out.
+ */
+
 // This is ca. 2013 code here ...
 var http = require('http')
 var mongoose = require('mongoose')
