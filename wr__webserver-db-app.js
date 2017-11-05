@@ -10,6 +10,37 @@
  * O well.
  */
 
+/*
+EDIT 2017-11-05
+Testing Git:
+- Local: git commit to Github = OK
+- AWS EC2: git pull = ?
+
+Also wish to use AWS EC2 development edits (occasional) to do git commit from there to Github.
+Not a Best Practice, no doubt.
+
+Note:
+- on AWS EC2:
+ - 'git clone git@github....' did not work
+ - needed to use 'git clone http://' to get it work
+
+Has to do with SSH key etc.
+One page somewhere tells me:
+- the EC2 User cannot create an SSH key that will work to get to Github from EC2
+- instead the ROOT user must create an SSH key, to get to Github, from EC2.
+ - hmm, ROOT SSH key - does not sound like Best Idea. Hmm.
+
+Another idea I find (on some page somewhere): SSH Agent Forwarding
+ https://developer.github.com/v3/guides/using-ssh-agent-forwarding/
+ Hmm.
+ But that appears to be just to get Deploy to work, out on AWS EC2
+ Not, to be able, *from* AWS EC2 to do git commit to Github.
+ Hmm.
+
+ Okay, this is my edit.
+ Time to do git commit from Local, see what git pull looks like over on AWS EC2.
+ */
+
 // This is ca. 2013 code here ...
 var http = require('http')
 var mongoose = require('mongoose')
